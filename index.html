@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Racing Legends 3D</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #070A12;
+      touch-action: none;
+      font-family: sans-serif;
+    }
+    #game-canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    #webgl-error {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: #0A0E17;
+      color: #F3F6FA;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 24px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+  <div id="webgl-error">
+    <h2>3D Graphics Unavailable</h2>
+    <p id="webgl-error-msg">Unable to initialize WebGL rendering context.</p>
+  </div>
+  <script src="js/three.min.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/textures.js"></script>
+  <script src="js/carBuilder.js"></script>
+  <script src="js/tracks.js"></script>
+  <script src="js/physics.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Racing Legends 3D",
+  "description": "Playable 3D motorsport racing game powered by Three.js WebGL and Jetpack Compose with realistic cars, AI opponents, garage customization, championship mode, and multiplayer architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
